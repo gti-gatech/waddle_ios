@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iCC-lO-7cu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TripsVC-->
+        <scene sceneID="oe1-Dt-i9c">
+            <objects>
+                <viewController storyboardIdentifier="TripsVC" hidesBottomBarWhenPushed="YES" id="iCC-lO-7cu" customClass="TripsVC" customModule="Waddle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jNf-2I-IT4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CZQ-1E-j2V">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DashboardCell" rowHeight="132" id="mbR-hP-8MB" customClass="DashboardCell" customModule="Waddle" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="132"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mbR-hP-8MB" id="9CD-xP-2aH">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rfk-Al-AgK">
+                                                    <rect key="frame" x="19" y="7" width="376" height="118"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="gCw-A0-bOP">
+                                                            <rect key="frame" x="20" y="5" width="336" height="108"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date: 06/20/2020" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCs-0U-iZ3">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="18"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                                                                    <color key="textColor" red="0.086274509799999996" green="0.1215686275" blue="0.23921568630000001" alpha="0.75305347710000003" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student: Andy Warn" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8l3-IR-RPh">
+                                                                    <rect key="frame" x="0.0" y="18" width="139" height="18"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                                                    <color key="textColor" red="0.086274509799999996" green="0.1215686275" blue="0.23921568630000001" alpha="0.79563710386056341" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jLg-53-gkY">
+                                                                    <rect key="frame" x="0.0" y="36" width="70.5" height="18"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="YB3-MQ-l63">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="10.5" height="18"/>
+                                                                        </imageView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Supervisor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4l-0h-z8l">
+                                                                            <rect key="frame" x="15.5" y="0.0" width="55" height="18"/>
+                                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                                                            <color key="textColor" red="0.94901960780000005" green="0.40000000000000002" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick up Stop: Beragio PI" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPd-6m-zYq">
+                                                                    <rect key="frame" x="0.0" y="54" width="137.5" height="18"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                                                                    <color key="textColor" red="0.086274509799999996" green="0.1215686275" blue="0.23921568630000001" alpha="0.75305347710000003" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABC Street Group  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60m-v0-WCB">
+                                                                    <rect key="frame" x="0.0" y="72" width="109" height="18"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                                                                    <color key="textColor" red="0.086274509799999996" green="0.1215686275" blue="0.23921568630000001" alpha="0.75305347710000003" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Supervisor: Anne Thompson" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgC-Ht-heF">
+                                                                    <rect key="frame" x="0.0" y="90" width="159.5" height="18"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                                                                    <color key="textColor" red="0.086274509799999996" green="0.1215686275" blue="0.23921568630000001" alpha="0.75305347710000003" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="gCw-A0-bOP" firstAttribute="top" secondItem="Rfk-Al-AgK" secondAttribute="top" constant="5" id="GjS-ey-QXH"/>
+                                                        <constraint firstItem="gCw-A0-bOP" firstAttribute="leading" secondItem="Rfk-Al-AgK" secondAttribute="leading" constant="20" id="PbZ-Ta-9uP"/>
+                                                        <constraint firstAttribute="trailing" secondItem="gCw-A0-bOP" secondAttribute="trailing" constant="20" id="Qnz-Dz-8lK"/>
+                                                        <constraint firstAttribute="bottom" secondItem="gCw-A0-bOP" secondAttribute="bottom" constant="5" id="h5F-8d-SYR"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Rfk-Al-AgK" secondAttribute="trailing" constant="19" id="0j9-z5-MRh"/>
+                                                <constraint firstItem="Rfk-Al-AgK" firstAttribute="top" secondItem="9CD-xP-2aH" secondAttribute="top" constant="7" id="D3v-Rk-hu4"/>
+                                                <constraint firstAttribute="bottom" secondItem="Rfk-Al-AgK" secondAttribute="bottom" constant="7" id="OHm-Tj-DEO"/>
+                                                <constraint firstItem="Rfk-Al-AgK" firstAttribute="leading" secondItem="9CD-xP-2aH" secondAttribute="leading" constant="19" id="tQR-Ws-kl4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="labelDate" destination="qCs-0U-iZ3" id="WpH-XA-cbd"/>
+                                            <outlet property="labelGroup" destination="60m-v0-WCB" id="XFn-bF-MgW"/>
+                                            <outlet property="labelStop" destination="NPd-6m-zYq" id="zJw-W0-q73"/>
+                                            <outlet property="labelStudent" destination="8l3-IR-RPh" id="pkq-MK-PFY"/>
+                                            <outlet property="labelSupervisor" destination="jgC-Ht-heF" id="jWH-Xy-xQB"/>
+                                            <outlet property="stackViewSupervisor" destination="jLg-53-gkY" id="dar-tY-1Gb"/>
+                                            <outlet property="viewContainer" destination="Rfk-Al-AgK" id="ops-Mz-SfP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="iCC-lO-7cu" id="Fes-dj-bF9"/>
+                                    <outlet property="delegate" destination="iCC-lO-7cu" id="474-ak-aKr"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="QpH-EE-Tve" firstAttribute="trailing" secondItem="CZQ-1E-j2V" secondAttribute="trailing" id="4QU-Qy-gIS"/>
+                            <constraint firstItem="QpH-EE-Tve" firstAttribute="bottom" secondItem="CZQ-1E-j2V" secondAttribute="bottom" id="BMh-OH-tWw"/>
+                            <constraint firstItem="CZQ-1E-j2V" firstAttribute="leading" secondItem="jNf-2I-IT4" secondAttribute="leading" id="E8q-wz-5tE"/>
+                            <constraint firstItem="CZQ-1E-j2V" firstAttribute="top" secondItem="QpH-EE-Tve" secondAttribute="top" id="Tbj-Lj-wxQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QpH-EE-Tve"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableViewTrips" destination="CZQ-1E-j2V" id="Iyg-fn-Eju"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yD3-QC-KYk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2.8985507246376816" y="158.70535714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="star" width="10.5" height="10"/>
+    </resources>
+</document>
